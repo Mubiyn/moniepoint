@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           return MaterialApp(
             title: 'Flutter Demo',
             theme: lightTheme,
-            darkTheme: darkTheme,
+            // darkTheme: darkTheme,
             themeMode: moniepointSettingService.themeMode.value,
             debugShowCheckedModeBanner: false,
             navigatorKey: MoniepointNavigationService.navigatorKey,
