@@ -18,18 +18,21 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(375, 800),
-      builder: (context, _) => MaterialApp(
-        title: 'Flutter Demo',
-        theme: lightTheme,
-        darkTheme: darkTheme,
-        themeMode: moniepointSettingService.themeMode.value,
-        debugShowCheckedModeBanner: false,
-        navigatorKey: MoniepointNavigationService.navigatorKey,
-        navigatorObservers: [MoniepointNavigationService.routeObserver],
-        home: const SplashScreen(),
-      ),
-    );
+        designSize: const Size(375, 746),
+        minTextAdapt: true,
+        splitScreenMode: true,
+        builder: (context, _) {
+          return MaterialApp(
+            title: 'Flutter Demo',
+            theme: lightTheme,
+            darkTheme: darkTheme,
+            themeMode: moniepointSettingService.themeMode.value,
+            debugShowCheckedModeBanner: false,
+            navigatorKey: MoniepointNavigationService.navigatorKey,
+            navigatorObservers: [MoniepointNavigationService.routeObserver],
+            home: const SplashScreen(),
+          );
+        });
   }
 }
 
@@ -58,6 +61,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    initDim();
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: xPadding),

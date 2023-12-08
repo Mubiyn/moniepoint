@@ -367,7 +367,7 @@ class TrackingItemDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: screenWidth(context) * 0.38,
+      width: screenWidth(context) * 0.4,
       child: Row(
         children: [
           if (imgPath != null)

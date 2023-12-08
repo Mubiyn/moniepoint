@@ -22,7 +22,7 @@ class _EstimateScreenState extends State<EstimateScreen>
   @override
   void initState() {
     _animationController = AnimationController(
-      duration: const Duration(seconds: 2),
+      duration: const Duration(seconds: 3),
       vsync: this,
     );
     _animation = Tween<double>(begin: 1400.0, end: 1500.0)

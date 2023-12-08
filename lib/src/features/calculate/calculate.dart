@@ -54,13 +54,16 @@ class _CalculateScreenState extends State<CalculateScreen> {
           ),
           bottomNavigationBar: BottomAppBar(
             elevation: 1,
-            child: AppButton(
-              text: 'Calculate',
-              onTap: () {
-                setState(() {
-                  index = 1;
-                });
-              },
+            child: Padding(
+              padding: EdgeInsets.only(bottom: yPaddingSmall),
+              child: AppButton(
+                text: 'Calculate',
+                onTap: () {
+                  setState(() {
+                    index = 1;
+                  });
+                },
+              ),
             ),
           ),
           body: SingleChildScrollView(

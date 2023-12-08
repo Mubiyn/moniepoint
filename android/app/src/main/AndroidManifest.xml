@@ -1,6 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+ <supports-screens android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="false"
+                      android:xlargeScreens="false"/>
+     <uses-permission android:name="android.permission.INTERNET"/>
     <application
-        android:label="moniepoint_test"
+        android:label="Moniepoint"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity

@@ -6,7 +6,7 @@ import 'package:moniepoint_test/src/core/resources/resources.dart';
 String? _fontFamily = GoogleFonts.inter().fontFamily;
 
 FlexSchemeData _moniePointScheme = const FlexSchemeData(
-  name: 'streams theme scheme',
+  name: 'theme scheme',
   description: 'base theme',
   light: FlexSchemeColor(
     primary: kPrimaryColor,
